@@ -11,10 +11,12 @@ function run(t, input, output, opts = { }) {
         });
 }
 
-/* Write tests here
+var expected = '@import "some-lib/some-style.scss"';
 
-test('does something', t => {
-    return run(t, 'a{ }', 'a{ }', { });
+test('omits tilde as first char', t => {
+    return run(t, '@import "~some-lib/some-style.scss"', expected, { });
 });
 
-*/
+test('do not change string without tilde', t => {
+    return run(t, '@import "some-lib/some-style.scss"', expected, { });
+});
