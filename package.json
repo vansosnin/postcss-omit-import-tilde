@@ -10,7 +10,7 @@
     "tilde",
     "import"
   ],
-  "author": "Ivan Sosnin <isosnin@skbkontur.ru>",
+  "author": "Ivan Sosnin <vansosnin@gmail.com>",
   "license": "MIT",
   "repository": "vansosnin/postcss-omit-import-tilde",
   "bugs": {
@@ -26,7 +26,9 @@
     "eslint-config-postcss": "^2.0.2"
   },
   "scripts": {
-    "test": "ava && eslint *.js"
+    "test": "ava && eslint *.js",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5"
