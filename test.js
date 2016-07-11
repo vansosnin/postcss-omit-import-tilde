@@ -20,3 +20,12 @@ test('omits tilde as first char', t => {
 test('do not change string without tilde', t => {
     return run(t, '@import "some-lib/some-style.scss"', expected, { });
 });
+
+test('omits only first tilde', t => {
+    return run(
+        t,
+        '@import "~some-lib/some-style.scss~1"',
+        '@import "some-lib/some-style.scss~1"',
+        { }
+    );
+});
