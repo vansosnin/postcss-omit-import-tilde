@@ -1,0 +1,34 @@
+{
+  "name": "postcss-omit-import-tilde",
+  "version": "0.0.1",
+  "description": "PostCSS plugin to omit tilde in sass import function argument",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "sass",
+    "tilde",
+    "import"
+  ],
+  "author": "Ivan Sosnin <isosnin@skbkontur.ru>",
+  "license": "MIT",
+  "repository": "vansosnin/postcss-omit-import-tilde",
+  "bugs": {
+    "url": "https://github.com/vansosnin/postcss-omit-import-tilde/issues"
+  },
+  "homepage": "https://github.com/vansosnin/postcss-omit-import-tilde",
+  "dependencies": {
+    "postcss": "^5.0.21"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "eslint": "^2.10.0",
+    "eslint-config-postcss": "^2.0.2"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  }
+}
