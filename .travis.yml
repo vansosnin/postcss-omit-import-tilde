@@ -1,6 +1,14 @@
 language: node_js
 node_js:
-  - "6"
-  - "5"
-  - "4"
-  - "0.12"
+- '6'
+- '5'
+- '4'
+- '0.12'
+deploy:
+  provider: npm
+  email: vansosnin@gmail.com
+  api_key:
+    secure: GTwmYuwBe1ouJyYPvirlV2YW1/DKWHlnvYpK/TT38df/VIppR5Vdo2+7zyz0zF8Md5rdUbPA3ksTIM3xaWB8rprrqCzaJ3KvxekHO/4MHQfblqnUP9ipbug+L4UoRdgi9kPkgmw/aR2g+TmbPLGq1kit4jp5JSaFXpwMN410kLyq8yNkwiIwU7S4AKL0vm5guXM9QMBekd98+jLjF3SLp8aJTYdSk9bZzMU3egfId/f85OPWUZ16AdGaOGDd8ajycLZY9GDBWuWfrcxDdYWw2nKDMGecS+v5v1MZuuA7s3PAxaBFtWnG4aAsI5xWkw1gbnwfwR1z5Xh32vsnsnbL3rCnwvDfLlLXmc6y4wI43HFS6Dh/4zJwRSYdBwwXMuHHRO/Jg+V+lrluWAZkxZ+QJCQ0zXqmO3qavtzRYF9/xjF8kEUN7saQDOHtDdQ6tBybUi/QPieTMKnWKOjr/SSk/j9XH/MgkMlwvQMy1IaxLRYhXUiy1bI9ayTs9wwFXqji8zbWut5DBs0y4HY4pBCWSs74ueHmfdXmWT1f2iS+XheuzdpJVJO81g4gmqNOo0lkGz4Em5ld0lAXm0QXxzqSwap0BVkspWtAvggIhaQJsMrJznWQfya8+JCNMoQ4la435E1CX3yAGSQqBYjt0dZJJ70AGIIXvKM8SvqIzLmnG20=
+  on:
+    tags: true
+    repo: vansosnin/postcss-omit-import-tilde

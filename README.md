@@ -1,4 +1,6 @@
-# PostCSS Omit Import Tilde [![Build Status][ci-img]][ci]
+# PostCSS Omit Import Tilde
+[![Build Status][ci-img]][ci]
+[![npm version][npm-img]][npm]
 
 [PostCSS] plugin to omit tilde in sass import function argument.
 
@@ -21,6 +23,8 @@ So you can use this plugin in chain to build styles in gulp with dependency like
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/vansosnin/postcss-omit-import-tilde.svg
 [ci]:      https://travis-ci.org/vansosnin/postcss-omit-import-tilde
+[npm-img]: https://badge.fury.io/js/postcss-omit-import-tilde.svg
+[npm]: https://badge.fury.io/js/postcss-omit-import-tilde
 
 #### Input
 ```css
